@@ -12,10 +12,13 @@ export function percentile(p, values) {
   const sorted = [...values].sort((a, b) => a - b);
   const N = sorted.length;
 
-  if (p === 0) return Number(sorted[0].toFixed(2));
-  if (p === 100) return Number(sorted[N - 1].toFixed(2));
+  if (p === 0) {
+    return Number(sorted[0].toFixed(2));
+  }
+  if (p === 100) {
+    return Number(sorted[N - 1].toFixed(2));
+  }
 
   const rank = Math.ceil((p / 100) * N);
-  return Number(sorted[rank - 1].toFixed(2));
+  return Number(sorted[rank](2));
 }
-
