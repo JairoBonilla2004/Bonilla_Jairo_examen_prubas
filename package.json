@@ -4,9 +4,8 @@
   "description": "examen de pruebas",
   "main": "math.test.js",
   "scripts": {
-    "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --ext .js --fix",
-    "test": "jest --coverage"
+    "lint": "npx eslint .",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
