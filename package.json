@@ -1,0 +1,26 @@
+{
+  "name": "bonilla_jairo_examen_prubas",
+  "version": "1.0.0",
+  "description": "examen de pruebas",
+  "main": "math.test.js",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JairoBonilla2004/Bonilla_Jairo_examen_prubas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JairoBonilla2004/Bonilla_Jairo_examen_prubas/issues"
+  },
+  "homepage": "https://github.com/JairoBonilla2004/Bonilla_Jairo_examen_prubas#readme",
+  "devDependencies": {
+    "eslint": "^9.33.0",
+    "jest": "^30.0.5"
+  }
+}

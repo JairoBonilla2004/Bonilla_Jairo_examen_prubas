@@ -1,0 +1,7 @@
+#Proyecto de node.js
+node_modules/
+.env
+coverage/
+npm-debug.log
+*.log
+.DS_Store
