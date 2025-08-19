@@ -1,9 +1,10 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
+// eslint.config.js (CommonJS)
+const globals = require("globals");
+const pluginJs = require("@eslint/js");
 
-export default [
+module.exports = [
   {
-    files: ["src/**/*.js"],
+    // Configuración para código normal
     languageOptions: {
       ecmaVersion: "latest",
       sourceType: "module",
@@ -14,24 +15,25 @@ export default [
     plugins: {},
     rules: {
       "no-unused-vars": "warn",          
-      "no-undef": "error",              
+      "no-undef": "error",               
       "eqeqeq": ["error", "always"],     
-      "semi": ["error", "always"],      
-      "quotes": ["error", "double"],    
-      "indent": ["error", 2],          
-      "curly": "error",                  
+      "semi": ["error", "always"],       
+      "quotes": ["error", "double"],     
+      "indent": ["error", 2],            
+      "curly": "error",                 
       "no-console": "off"               
     }
   },
 
   {
+    // Configuración específica para archivos de test Jest
     files: ["**/*.test.js"],
     languageOptions: {
       ecmaVersion: "latest",
       sourceType: "module",
       globals: {
         ...globals.node,
-        ...globals.jest   
+        ...globals.jest
       }
     },
     plugins: {},
