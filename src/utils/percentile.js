@@ -1,4 +1,4 @@
-export function percentile(p, values) {
+ function percentile(p, values) {
   if (typeof p !== "number" || p < 0 || p > 100) {
     throw new RangeError("p debe estar entre 0 y 100");
   }
@@ -22,3 +22,5 @@ export function percentile(p, values) {
   const rank = Math.ceil((p / 100) * N);
   return Number(sorted[rank](2));
 }
+
+module.exports = { percentile }; // <-- CommonJS export

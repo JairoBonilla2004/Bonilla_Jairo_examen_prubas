@@ -1,7 +1,6 @@
-import { calcWeightedGrade } from "./calcWeightedGrade.js";
-import { percentile } from "./percentile.js";
 
-
+const { calcWeightedGrade } = require("./calcWeightedGrade.js");
+const { percentile } = require("./percentile.js");
 
 describe("calcWeightedGrade", () => {
   test("calcula promedio ponderado correcto", () => {

@@ -1,4 +1,4 @@
-export function calcWeightedGrade(items) {
+function calcWeightedGrade(items) {
   if (!Array.isArray(items) || items.length === 0) {
     throw new TypeError("items debe ser un arreglo no vacío");
   }
@@ -27,3 +27,6 @@ export function calcWeightedGrade(items) {
 
   return Number(totalScore.toFixed(2));
 }
+
+module.exports = { calcWeightedGrade }; // <-- CommonJS export
+
