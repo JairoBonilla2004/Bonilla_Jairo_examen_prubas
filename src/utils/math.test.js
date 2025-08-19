@@ -1,6 +1,3 @@
-import { calcWeightedGrade } from "";
-import { percentile } from "";
-
 const { calcWeightedGrade } = require("./calcWeightedGrade.js");
 const { percentile } = require("./percentile.js");
 
