@@ -8,19 +8,15 @@
   if (!values.every(v => typeof v === "number")) {
     throw new TypeError("values debe contener solo números");
   }
-
   const sorted = [...values].sort((a, b) => a - b);
   const N = sorted.length;
-
   if (p === 0) {
     return Number(sorted[0].toFixed(2));
   }
   if (p === 100) {
     return Number(sorted[N - 1].toFixed(2));
   }
-
   const rank = Math.ceil((p / 100) * N);
   return Number(sorted[rank](2));
 }
-
 module.exports = { percentile }; // <-- CommonJS export
