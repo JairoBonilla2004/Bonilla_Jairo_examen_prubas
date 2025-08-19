@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "examen de pruebas",
   "main": "math.test.js",
-   "scripts": {
+  "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest --coverage"
