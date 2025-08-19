@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "examen de pruebas",
   "main": "math.test.js",
-  "scripts": {
-    "lint": "npx eslint .",
-    "test": "jest"
+   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
